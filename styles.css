@@ -1,0 +1,114 @@
+:root {
+    /*  Accent Colours */
+    --mainAccentColour: #8c38db;
+    --mainAccentColourLight: #a662e5;
+    --mainAccentColourHover: rgba(140, 56, 219, 0.1);
+
+    /*  Background Colours */
+    --homeBackgroundColour: #3a86ff;
+    --aboutMeBackgroundColour: #8338ec;
+    --projectsBackgroundColour: #ffbe0b;
+    --contactBackgroundColour: #ff006e;
+    --lighterBackgroundColour: white;
+
+    /*  Borders */
+    --thinBorder: rgb(210, 210, 210);
+
+    /*  Text Colours */
+    --paragraphTextColour: rgb(119, 119, 119);
+    --paragraphTextColourDark: rgb(175, 175, 175);
+    --paragraphTextColourDarker: #c3c3c3;
+
+    /*  Text Sizes */
+    --paragraphTextSize: 0.9rem;
+
+    /*  Box Shadows */
+    --smallBoxShadow: inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
+    --mediumBoxShadow: inset 0 1px 2px #ffffff50, 0 1px 2px #00000030, 0 2px 4px #00000015;
+    --largeBoxShadow: inset 0 1px 2px #ffffff70, 0 1px 2px #00000030, 0 2px 4px #00000015;
+}
+
+body {
+    background-color: var(--homeBackgroundColour);
+    font-family: Helvetica, sans-serif;
+}
+
+.resumeButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.resumeButton {
+    background-color: white;
+    color: black;
+    border-radius: 9999px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 10px;
+    box-shadow: var(--smallBoxShadow);
+}
+
+.resumeButton:hover {
+    /* background-color: var(--mainAccentColour); */
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: var(--largeBoxShadow);
+}
+
+.resumeButton:active {
+    /* background-color: gray; */
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: var(--smallBoxShadow);
+}
+.navLinksContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allow clicks to pass through empty space */
+}   
+.navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    pointer-events: auto; /* Re-enable clicks on the links themselves */
+}
+
+.navLink a {
+    font-size: 12vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navLink a:hover {
+    color: white;
+    transform: scale(1.02); /* Slight scale on hover for effect */
+}
+
+
+
