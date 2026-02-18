@@ -111,5 +111,13 @@ body {
     transform: scale(1.02); /* Slight scale on hover for effect */
 }
 
+.page{
+    display: none;
+}
+
+.page.active{
+    display: block;
+}
+
 
 

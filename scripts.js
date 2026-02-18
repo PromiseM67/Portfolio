@@ -28,3 +28,22 @@ contactLink.addEventListener("mouseenter", () => {
 contactLink.addEventListener("mouseleave", () => {
     document.body.style.backgroundColor = "#3a86ff";
 });
+
+const navButtons = document.querySelectorAll(".navLink");
+const pages = document.querySelectorAll(".page");
+
+navButtons.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        const targetId = button.dataset.page;
+
+        pages.forEach(page=>{
+            page.classList.remove('active');
+        })
+
+        document.getElementById(targetId)
+                .classList.add("active")
+    });
+
+});
