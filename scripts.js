@@ -29,14 +29,18 @@ contactLink.addEventListener("mouseleave", () => {
     document.body.style.backgroundColor = "#3a86ff";
 });
 
-const navButtons = document.querySelectorAll(".navLink");
+
+
+const navButtons = document.querySelectorAll(".navLink a");
 const pages = document.querySelectorAll(".page");
 
 navButtons.forEach(button=>{
 
     button.addEventListener("click",()=>{
 
-        const targetId = button.dataset.page;
+        const targetId = button.dataset.page; //stores the value from the data page set
+        console.log("button clicked")
+        console.log(targetId)
 
         pages.forEach(page=>{
             page.classList.remove('active');
