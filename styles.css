@@ -31,6 +31,7 @@
 body {
     background-color: var(--homeBackgroundColour);
     font-family: Helvetica, sans-serif;
+    transition: background-color 0.5s ease;
 }
 
 .resumeButtonContainer {
@@ -60,7 +61,7 @@ body {
     /* background-color: var(--mainAccentColour); */
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
-    transform: scale(1.05);
+    transform: scale(1.2);
     box-shadow: var(--largeBoxShadow);
 }
 
@@ -93,7 +94,7 @@ body {
 }
 
 .navLink a {
-    font-size: 12vw;
+    font-size: 10vw;
     font-weight: 100;
     text-transform: uppercase;
     text-decoration: none;
