@@ -119,5 +119,58 @@ body {
     display: block;
 }
 
+.backButton{
+    margin-left:0.5rem;
+}
 
+/* Wrapper for Intro and Portrait */
+.intro-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Center items vertically */
+    height: 80vh; /* Set height to take up most of the viewport */
+    width: 100%;
+    padding: 0 5%; /* Add some horizontal padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
 
+.introContainer {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    flex: 1; /* Take up available space */
+    height: 100%;
+    /* width: 40%; - Removing fixed width */
+    /* top: 0; */
+    /* left: 0; */
+    /* padding: 2rem; */
+    /* border-right: white; */
+}
+
+.intro {
+    font-size: 10vh;
+    font-weight: 200;
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0; /* Reset margin to better control spacing in flex */
+}
+
+.name {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 15vh;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.portraitContainer {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    flex: 1; /* Take up available space */
+    height: 100%;
+    /* width: 50%; */
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
