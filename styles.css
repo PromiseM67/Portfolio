@@ -129,10 +129,11 @@ body {
     display: flex;
     justify-content: space-between; /* Space out the items */
     align-items: center; /* Center items vertically */
-    height: 80vh; /* Set height to take up most of the viewport */
+    flex-wrap: wrap;
+    height: 40rem; /* Set height to take up most of the viewport */
     width: 100%;
-    padding: 0 5%; /* Add some horizontal padding */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    padding: 0 2%; /* Add some horizontal padding */
+    /* box-sizing: border-box; Ensure padding doesn't affect width */
 }
 
 .introContainer {
@@ -149,7 +150,7 @@ body {
 }
 
 .intro {
-    font-size: 10vh;
+    font-size: 6.25rem;
     font-weight: 200;
     font-family: 'SF Pro Display', sans-serif;
     margin: 0; /* Reset margin to better control spacing in flex */
@@ -157,7 +158,7 @@ body {
 
 .name {
     font-family: 'Beau Rivage', cursive;
-    font-size: 15vh;
+    font-size: 7rem;
     margin-top: 0.25rem;
     display: block;
 }
@@ -168,10 +169,36 @@ body {
     align-items: center; /* Center image vertically */
     flex: 1; /* Take up available space */
     height: 100%;
-    /* width: 50%; */
+
 }
 
-.image{
-    max-width: 100%;
-    height: auto;
+.mainPortrait {
+    width: 100%;
+    max-width: 28rem; /* Limit size on large screens */
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10%; /* Optional: adds a nice rounded look */
+    box-shadow: var(--mediumBoxShadow);
+}
+
+.mainPortrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.paragraphContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 10rem;
+    
+}
+
+.aboutParagraph{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
